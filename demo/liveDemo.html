@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>直播播放器实例化方式Demo</title>
+		<title>直播播放器实例化方式直播Demo</title>
 		<script src="../dist/js/jquery.min.js"></script>
 		<script src="../dist/sewise.player.min.js"></script>
 	</head>
@@ -13,9 +13,8 @@
 		    	elid:"con1",
 		    	autostart:true,
 		    	server:"live",
-                url:"rtmp://192.168.1.21:1935/livestream/58uk9k77",
-                //url:"http://192.168.1.21:5080/hls/58uk9k77.m3u8",
-                //url:"live://192.168.1.98:8888/djff999",
+                url:"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8",
+                type:"m3u8",
                 duration:3600,
 		    	skin:"liveWhite"
            };
@@ -135,7 +134,7 @@
 		player.toPlay("rtmp://192.168.1.21:1935/livestream/58uk9k77", "LiveDemo", "", true);
 	}
 	 </script>
-	 <div id="con1" style="width:540px;height:352px;background-color: aqua;">
+	 <div id="con1" style="width:800px;height:600px;background-color: aqua;">
 	 	
 	 </div>
 	 <div style="padding-top: 50px;">

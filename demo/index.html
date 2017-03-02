@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../dist/js/jquery.min.js"></script>
+		<link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css" />
+		<style>
+			.container{
+				width: 800px;
+				/*height: 100px;*/
+			}
+			.listBox{
+				margin-top:100px;
+			}
+			.listBox button{
+				width: 168px;
+			}
+			.row{
+				margin-bottom: 20px;
+			}
+		</style>
+		<script>
+			$(document).ready(function(){
+				registerEvent();
+			});
+			function registerEvent(){
+				$(".listBox").click(function(e){
+					switch(e.target.name){
+						case "vod-flash-m3u8":
+						  window.location.href="hlsDemo.html";
+						break;
+						case "vod-h5-m3u8":
+						  window.location.href="hlsjsPluginDemo.html";
+						break;
+						case "vod-h5-audio":
+						 window.location.href="audioDemo.html";
+						break;
+						case "vod-h5-danmu":
+						 window.location.href="danmuPluginDemo.html";
+						break;
+						case "vod-flash-vr":
+						 window.location.href="flash360VodVideoDemo.html";
+						break;
+						case "live-flash-vr":
+						 window.location.href="flash360LiveVideoDemo.html";
+						break;
+						case "live-flash-m3u8":
+						 window.location.href="liveDemo.html";
+						break;
+						case "live-flash-rtmp":
+						 window.location.href="liveDemo2.html";
+						break;
+						case "live-h5-vr":
+						 window.location.href="webLiveHlsVRDemo.html";
+						break;
+						case "vod-h5-mp4":
+						 window.location.href="vodDemo.html";
+						break;
+						case "vod2-h5-mp4":
+						 window.location.href="vodDemo2.html";
+						break;
+						case "vod-h5-skin":
+						 window.location.href="vodTangerineSkinDemo.html";
+						break;
+					}
+				});
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="listBox">
+			<div class="row">
+				<div class="col-md-4"><button name="vod-flash-m3u8" type="button" class="btn btn-primary">flash模式点播m3u8视频</button></div>
+				<div class="col-md-4"><button name="vod-h5-audio" type="button" class="btn btn-primary">播放音乐</button></div>
+				<div class="col-md-4"><button name="vod-h5-danmu" type="button" class="btn btn-primary">弹幕插件演示</button></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><button name="vod-flash-vr" type="button" class="btn btn-success">flash模式全景点播</button></div>
+				<div class="col-md-4"><button name="live-flash-vr" type="button" class="btn btn-success">flash模式全景直播</button></div>
+				<div class="col-md-4"><button name="vod-h5-m3u8" type="button" class="btn btn-success">html5模式播放m3u8</button></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><button name="live-flash-m3u8" type="button" class="btn btn-warning">直播演示1</button></div>
+				<div class="col-md-4"><button name="live-flash-rtmp" type="button" class="btn btn-warning">直播演示2</button></div>
+				<div class="col-md-4"><button name="live-h5-vr" type="button" class="btn btn-warning">html5模式全景直播</button></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><button name="vod-h5-mp4" type="button" class="btn btn-info">点播演示1</button></div>
+				<div class="col-md-4"><button name="vod2-h5-mp4" type="button" class="btn btn-info">点播演示2</button></div>
+				<div class="col-md-4"><button name="vod-h5-skin" type="button" class="btn btn-info">酷炫的点播皮肤</button></div>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

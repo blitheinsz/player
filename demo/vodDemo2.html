@@ -6,13 +6,11 @@
 		<script src="../dist/js/jquery.min.js"></script>
 	</head>
 	<body>
-		<div id="con1" style="width:440px;height:352px;background-color: aqua;">
-	 	   <script src="../dist/sewise.player.min.js#url=http://192.168.1.111/sewiseplayer_js_3.0.0/bin/video/test.mp4&autostart=true&skin=vodWhite"></script>
+		<div id="con1" style="width:640px;height:400px;background-color: aqua;">
+	 	   <script src="../dist/sewise.player.min.js#url=../assets/video/test.mp4&autostart=true&skin=vodWhite"></script>
 	   </div>
 		<script>
-		    var host="http://192.168.1.111/sewiseplayer_js_3.0.0/bin/"
 		    
-           
           $(document).ready(dowReady);
 
          var player;
@@ -117,7 +115,7 @@
 	 	player.muted(true);
 	 }
 	function switchVideo(){
-		player.toPlay(host+"video/test3.mp4", "Sintel", 0, true);
+		player.toPlay("../assets/video/test.mp4", "Sintel", 0, true);
 	}
 	 </script>
 	 

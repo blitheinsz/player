@@ -15,9 +15,17 @@
 		    var config={
 		    	elid:"con1",
 		    	autostart:true,
-		        type:"m3u8",
+		        type:"mp4",
 		        skinType:"tangerine",//必须设置此属性
-		    	url:"http://playlists/x36xhzz/x36xhzz.m3u8",
+		    	//url:"../assets/video/test.mp4",
+		    	videosjsonurl:{
+                "programname":"精彩大片",
+                "videos": [
+                    { "name":"普通", "selected":1,"url":"../assets/video/test.mp4" },
+                    { "name":"标清", "url":"../assets/video/test.mp4" },
+                    { "name":"高清", "url":"../assets/video/test.mp4" }
+                 ]
+                },
 		    	skin:"vodTangerine"
 		    };
 		   

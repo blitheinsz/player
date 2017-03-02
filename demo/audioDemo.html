@@ -9,19 +9,18 @@
 	<body>
 		
 		<script>
-		    var host="http://192.168.1.124/sewiseplayer_js_3.0.0/bin/"
 		    var config={
 		    	elid:"con1",
 		    	autostart:true,
-                url:host+"video/test.mp3",
+                url:"../assets/video/test.mp3",
                 server:"vod",
                 type:"mp3",
                 //primary:"flash",
-                title:"2016年的第一场雪",
+                title:"好听的歌曲",
                 fallbackurls:{
-                "mp3": host+"video/audio.mp3",
-                "ogg": host+"video/test.ogg"
-               },
+                "mp3": "../assets/video/test.mp3",
+                "ogg": "../assets/video/audio.ogg"
+                },
 		    	skin:"vodRadio"
 		    };
 		  
@@ -35,7 +34,7 @@
 		    }
 		    
 			function playHandle(){
-				var url=host+"video/audio.mp3";
+				var url="../assets/video/test.mp3";
 				player.toPlay(url,"歌曲名字",0,true);
 			}
 			
