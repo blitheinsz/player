@@ -9,20 +9,20 @@
 	<body>
 		
 		<script>
-		    var host="http://192.168.1.111/sewiseplayer_js_3.0.0/bin/"
+		  
 		    var config={
 		    	elid:"con1",
 		    	autostart:true,
 		    	videosjsonurl:{
-                "programname":"标题地址",
+                "programname":"影院在线",
                 "videos": [
-                    { "name":"普通", "selected":1,"url":host+"video/test.mp4" },
-                    { "name":"标清", "url":host+"video/test2.mp4" },
-                    { "name":"高清", "url":host+"video/test3.mp4" }
+                    { "name":"普通", "selected":1,"url":"../assets/video/test.mp4" },
+                    { "name":"标清", "url":"../assets/video/test.mp4" },
+                    { "name":"高清", "url":"../assets/video/test.mp4" }
                 ]
                },
                "type":"mp4",
-		    	skin:"vodFlowPlayer"
+		    	skin:"vodMultiLight"
 		    };
 		   
 		    $(document).ready(dowReady);
