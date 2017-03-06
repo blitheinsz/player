@@ -1,0 +1,717 @@
+/*
+ * Skin for Sewise Player
+ * http://www.sewise.com/
+ * 
+ * Skin Name: vodSimpleVPass
+ * 
+ * Copyright (c) 2010-2016 Sewise Ltd
+ * 
+ * Author: keyun
+ * Skin Version: 3.0.0 (sewise player 3.0.0)
+ * Date: 2016/6/7
+ */
+.sewiseplayer-container{
+	background-color: #FFFFFF;
+}
+/*播放控制栏*/
+.vodSimpleVPass div.sewise-player-ui div.controlbar {
+	position: absolute;
+	width: 100%;
+	height: 106px;
+	left: 0px;
+    bottom: -106px;
+	pointer-events: auto;
+	border-bottom: 1px solid #EEEEEE;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-bg {
+	position: absolute;
+	width: 100%;
+	height: 77px;
+	background-color: #ffffff;
+	text-indent: -10000px;
+	bottom: 0px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar-scaleIcon {
+	position: absolute;
+	width: 100%;
+	height: 120px;
+	/*background: url("controlbar.png") 0px -38px repeat-x;*/
+	z-index: 3;
+	bottom: 77px;
+	overflow-x: hidden;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar-scaleIcon-bg {
+	position: absolute;
+	width: 100%;
+	height: 29px;
+	background: url("controlbar.png") 0px -38px repeat-x;
+	z-index: 2;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar-scaleIcon img{
+	position: absolute;
+	border: 1px solid darkseagreen;
+	cursor: pointer;
+	bottom: 2px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar-scaleIcon .scaleIcon-knowledge-title{
+	position: absolute;
+	background-color: #000000;
+	height: 23px;
+	bottom: 0px;
+	z-index: 3;
+	opacity: 0.6;
+	text-align: center;
+	pointer-events: none;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar-scaleIcon .scaleIcon-knowledge-title span{
+	width: 100%;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns {
+	position: absolute;
+	width: 100%;
+	bottom: 14px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	cursor: pointer;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a {
+	display:block;
+	width: 28px;
+	height: 23px;
+	text-indent: -10000px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-play {
+	background: url("controlbar.png") 0px -137px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-play:hover {
+	background: url("controlbar.png") 0px -137px no-repeat;
+	
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-pause {
+	background: url("controlbar.png") 0px -162px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-pause:hover {
+	background: url("controlbar.png") 0px -162px no-repeat;
+}
+
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-progress {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	/*top: 29px;*/
+	bottom: 77px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-progress div.controlbar-progress-totalline {
+	position: absolute;
+	width: 100%;
+	height: 17px;
+	top: 0px;
+	background: url("controlbar.png") 0px -19px repeat-x;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-progress div.controlbar-progress-loadedline {
+	position: absolute;
+	width: 0%;
+	height: 17px;
+	top: 0px;
+	background: url("controlbar.png") 0px 0px repeat-x;
+	/*background-color: rgba(0, 0, 0, 0.4);*/
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-progress div.controlbar-progress-playedline {
+	position: absolute;
+	width: 0%;
+	height: 16px;
+	top: 0px;
+	background: url("controlbar.png") 0px -69px repeat-x;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-progress div.controlbar-progress-seekline {
+	position: absolute;
+	width: 100%;
+	height: 17px;
+	top: 0px;
+	background-color:rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-progress div.controlbar-progress-playpoint {
+	position: absolute;
+	width: 16px;
+	height: 24px;
+	border-radius: 24px;
+	background-color: red;
+	left: 0%;
+	top: -4px;
+	cursor: pointer;
+	opacity:0;
+	/*IE8下*/
+    filter:alpha(opacity=0);
+}
+
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li.right-float {
+	float: right;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-fullscreen {
+	background: url("controlbar.png") 0px -237px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-fullscreen:hover {
+	background: url("controlbar.png") 0px -237px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-normalscreen {
+	background: url("controlbar.png") 0px -262px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-normalscreen:hover {
+	background: url("controlbar.png") 0px -262px no-repeat;
+}
+
+
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-volumeline {
+	position: absolute;
+	z-index: 32;
+	width: 31px;
+	height: 148px;
+	bottom: 42px;
+	left: 13px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-bg {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background: url("controlbar.png") 0px -346px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-volume {
+	position: absolute;
+	width: 11px;
+	height: 119px;
+	left:10px;
+	bottom:15px;
+	background: url("controlbar.png") -21px -495px;
+	pointer-events: none;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-dragger {
+	position: absolute;
+	width: 11px;
+	height: 119px;
+	left:10px;
+	bottom: 15px;
+	background: url("controlbar.png") 0px -495px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-volumeline div.controlbar-volumeline-point {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	left:7px;
+	top: 33px;
+	background-color: #ffffff;
+	cursor: pointer;
+	opacity:0.1;
+	/*IE8下*/
+    filter:alpha(opacity=10);
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-soundclose {
+	background: url("controlbar.png") 0px -112px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-soundclose:hover {
+	background: url("controlbar.png") 0px -112px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-soundopen {
+	background: url("controlbar.png") 0px -87px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li a.controlbar-btns-soundopen:hover {
+	background: url("controlbar.png") 0px -87px no-repeat;
+}
+
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns .clarity-switch-btn  {
+	background: url("controlbar.png") 0px -316px no-repeat;
+	width: 49px;
+	height: 28px;
+	cursor: pointer;
+	font-family: "Microsoft YaHei" !important;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns .clarity-switch-btn .clarity-btn-text {
+	display: block;
+	text-align: center;
+	line-height: 28px;
+	width: 49px;
+	height: 28px;
+	pointer-events: none;
+	color: #444444;
+	font-family: "Microsoft YaHei" !important;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-clarity-window{
+	position: absolute;
+	width: 80px;
+	height: 125px;
+	background: url("controlbar.png") 0px -616px no-repeat;
+	right: 60px;
+	bottom: 40px;
+	padding-top: 0px;
+	margin: 0px;
+	z-index: 32;
+	display: none;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-clarity-window ul{
+	list-style-type: none;
+	text-align: center;
+	top:0px;
+	padding: 0px 0px 0px 0px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-clarity-window ul li{
+	width: 80px;
+	height: 32px;
+	line-height: 32px;
+	cursor: pointer;
+	color: #444444;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-clarity-window ul li:hover{
+	background-color:#4fc1e9;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li .controlbar-btns-subtitle {
+	background: url("controlbar.png") 0px -286px no-repeat;
+	width: 58px;
+	height: 28px;
+	font-family: "Microsoft YaHei" !important;
+	cursor: pointer;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li .controlbar-btns-subtitle-grey {
+	background: url("controlbar.png") -58px -286px no-repeat !important;
+	width: 58px;
+	height: 28px;
+	font-family: "Microsoft YaHei" !important;
+	cursor: pointer;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li .controlbar-btns-subtitle-text {
+	display: block;
+	text-align: center;
+	line-height: 28px;
+	width: 58px;
+	height: 28px;
+	pointer-events: none;
+	color: #444444;
+	font-family: "Microsoft YaHei" !important;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li .controlbar-btns-zxue{
+  display: block;
+  width: 61px;
+  height: 17px;
+  cursor: pointer;
+  background: url("off.png");
+  margin-top: 5px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li .controlbar-btns-zxue.selected{
+  display: block;
+  width: 61px;
+  height: 17px;
+  cursor: pointer;
+  background: url("on.png");
+  margin-top: 5px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li .controlbar-btns-qanswer{
+  display: none;
+  width: 61px;
+  height: 17px;
+  cursor: pointer;
+  background: url("off2.png");
+  margin-top: 5px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns li .controlbar-btns-qanswer.selected{
+  display: none;
+  width: 61px;
+  height: 17px;
+  cursor: pointer;
+  background: url("on2.png");
+  margin-top: 5px;
+}
+
+.vodSimpleVPass div.sewise-player-ui div.controlbar ul.controlbar-btns div.controlbar-playtime {
+	position: relative;
+	float: left;
+	display: block;
+	color: white;
+	line-height: 24px;
+	font-size: 18px;
+	top: 0px;
+	color: #4fc1e9;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-other-pageTool{
+	position: absolute;
+	width: 133px;
+	left: 48%;
+	height: 23px;
+	bottom: 19px;
+	display: none;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-other-pageTool a.controlbar-other-pre{
+	display: block;
+	float: left;
+	/*display: inline-block;*/
+	width: 19px;
+	height: 23px;
+	background: url("controlbar.png") 0px -187px no-repeat;
+	cursor: pointer;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-other-pageTool a.controlbar-other-next{
+	display: block;
+	float: left;
+	/*display: inline-block;*/
+	width: 19px;
+	height: 23px;
+	cursor: pointer;
+	background: url("controlbar.png") 0px -212px no-repeat;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-other-pageTool .controlbar-other-page{
+	display: block;
+	float: left;
+	width: 95px;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 1px;
+	font-size: 18px;
+	color: #444444;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-nettip{
+	position: absolute;
+	width: 250px;
+	height: 100px;
+	background: url("nettip.png");
+	bottom: 76px;
+	z-index: 4;
+	font-family: 'Microsoft YaHei Regular', 'Microsoft YaHei';
+	display: none;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-nettip .controlbar-nettip-txt{
+	color: #000000;
+	margin-left: 16px;
+	margin-top: 9px;
+	height: 50px;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar .controlbar-nettip .controlbar-nettip-sure{
+	color: #4fc1e9;
+	margin-left: 17px;
+	cursor: pointer;
+}
+/*logo*/
+.vodSimpleVPass div.sewise-player-ui div.logo {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+.vodSimpleVPass div.sewise-player-ui div.logo a.logo-icon {
+	display: block;
+	width: 142px;
+	height: 27px;
+	background: url("logo.png") 0px 0px no-repeat;
+	text-indent: -10000px;
+	pointer-events: none;
+}
+
+
+/*标题栏*/
+.vodSimpleVPass div.sewise-player-ui div.topbar {
+	position: absolute;
+	width: 100%;
+	float: left;
+	
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	
+	/*color: white;
+	font-size: 0.8em;*/
+}
+.vodSimpleVPass div.sewise-player-ui div.topbar div.topbar-program {
+	float: left;
+	padding: 5px;
+}
+.vodSimpleVPass div.sewise-player-ui div.topbar div.topbar-program div.topbar-program-tip {
+	float: left;
+}
+.vodSimpleVPass div.sewise-player-ui div.topbar div.topbar-program div.topbar-program-title {
+	float: left;
+	display: none;
+}
+.vodSimpleVPass div.sewise-player-ui div.topbar div.topbar-clock {
+	float: right;
+	padding: 5px;
+}
+
+
+/*缓冲进度条*/
+.vodSimpleVPass div.sewise-player-ui div.buffer {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 50%;
+	margin-left: -30px;
+	top: 50%;
+	margin-top: -30px;
+}
+.vodSimpleVPass div.sewise-player-ui div.buffer div.buffer-bg {
+	position: absolute;
+	display: block;
+	width: 37px;
+	height: 37px;
+	left: 0px;
+	top: 0px;
+	
+	background: url("buffer.gif") 0px 0px no-repeat;
+	text-indent: -10000px;
+	
+}
+
+.vodSimpleVPass div.sewise-player-ui div.buffer div.buffer-text {
+	position: absolute;
+	left: 0px;
+	top: 45px;
+	font-size: 12px;
+}
+.vodSimpleVPass div.sewise-player-ui div.buffer div.buffer-text div.buffer-text-tip,
+.vodSimpleVPass div.sewise-player-ui div.buffer div.buffer-text div.buffer-text-bufferPt {
+	float: left;
+}
+
+
+/*开始播放大按钮*/
+.vodSimpleVPass div.sewise-player-ui div.big-play-btn {
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	top: 50%;
+	margin-top: -50px;
+	overflow: hidden;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0);
+	pointer-events: auto;
+}
+.vodSimpleVPass div.sewise-player-ui div.big-play-btn a.big-play-icon {
+	display:block;
+	width: 90px;
+	height: 90px;
+	cursor: pointer;
+	background: url("big_play_btn.png") 0px 0px no-repeat;
+	text-indent: -10000px;
+}
+/*.vodSimpleVPass div.sewise-player-ui div.big-play-btn:hover a.big-play-icon {
+	background: url("big_play_btn.png") -90px 0px no-repeat;
+}*/
+.sewise-mainContainer .rightCornerImg{
+	position: absolute;
+	width: 125px;
+	height: 125px;
+	top: 30px;
+	right: 30px;
+}
+.sewise-mainContainer .sewise-pdfCanvas{
+	position: absolute;
+}
+.sewise-mainContainer .sewise-canvaswrapper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.sewise-mainContainer .sewise-textLayer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+.sewise-mainContainer .sewise-page{
+	position: relative;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	/*left:20px;
+	right:20px;*/
+}
+.sewise-mainContainer .loadingIcon {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url('loading-icon.gif') center no-repeat;
+}
+.vodSimpleVPass .sewise-dragMarkArrow{
+	background: url("arrow.png");
+	position: absolute;
+	width: 70px;
+	height: 23px;
+	top: 100px;
+	left:60%;
+	display: none;
+}
+.vodSimpleVPass .sewise-dragMarkArrow-left{
+	background: url("arrowLeft.png");
+	position: absolute;
+	width: 70px;
+	height: 23px;
+	top: 100px;
+	left:60%;
+}
+.vodSimpleVPass .sewise-dragMarkArrow-right{
+	background: url("arrowRight.png");
+	position: absolute;
+	width: 70px;
+	height: 23px;
+	top: 100px;
+	left:60%;
+}
+.sewiseplayer-container .sewiseHideVtt{
+	display: none;
+}
+
+/****************************************************问答题相关*************************************************************/
+.sewiseplayer-container .topicDetail{
+	font-family: 'Microsoft YaHei Regular', 'Microsoft YaHei';
+	color: #000000;
+	position: absolute;
+	width: 416px;
+	/*height: 306px;*/
+	top:50%;
+	left: 50%;
+	margin-left: -208px;
+	margin-top: -153px;
+	background-color: #fff;
+    border: 1px solid #8E8E8E;
+    border-radius: 10px;
+    z-index: 200;
+    display: none;
+}
+.sewiseplayer-container .topicDetail .tDetail-q{
+	font-size: 16px;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+.sewiseplayer-container .topicDetail .tDetail-a{
+	font-size: 14px;
+	margin-left: 25px;
+	margin-top: 17px;
+}
+.sewiseplayer-container .topicDetail .tDetail-a input{
+	margin: 0px !important;
+	height: 13px;
+}
+.sewiseplayer-container .topicDetail .topicDetail-btnDiv{
+	/*position: absolute;*/
+	width:100%;
+	/*height: 48px;*/
+	bottom: 0px;
+	border-top: 1px solid #D4D4D4;
+	/*padding-top: 7px;*/
+	padding: 7px 14px;
+	text-align: right;
+}
+.sewiseplayer-container .topicDetail .topicDetail-btnDiv .btnSubmit{
+	/*float: right;*/
+	/*margin-right: 14px;*/
+}
+.sewiseplayer-container .topicDetail-header{
+	height:52px;line-height: 52px;border-bottom: 1px solid #d4d4d4;font-size: 16px;
+}
+.sewiseplayer-container .topicDetail-tDetail{
+	padding-bottom: 20px;
+}
+.sewiseplayer-container .topicDetail-overlay{
+	width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    opacity: 0.4;
+    filter: alpha(opacity: 40);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 190;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-progress .topicRedTimeLine{
+	position: absolute;
+	width: 1px;
+	height: 16px;
+	background-color: #FF0000;
+	pointer-events: none;
+}
+.vodSimpleVPass div.sewise-player-ui div.controlbar div.controlbar-progress .greyTimeRect{
+	position: absolute;
+	height: 16px;
+	background-color: #000000;
+	opacity: 0.5;
+	pointer-events: none;
+}
+/*...............................................文本布局................................................*/
+
+.sewise-textLayer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.2;
+  line-height: 1.0;
+}
+
+.sewise-textLayer > div {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.sewise-textLayer .highlight {
+  margin: -1px;
+  padding: 1px;
+
+  background-color: rgb(180, 0, 170);
+  border-radius: 4px;
+}
+
+.sewise-textLayer .highlight.begin {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.sewise-textLayer .highlight.end {
+  border-radius: 0px 4px 4px 0px;
+}
+
+.sewise-textLayer .highlight.middle {
+  border-radius: 0px;
+}
+
+.sewise-textLayer .highlight.selected {
+  background-color: rgb(0, 100, 0);
+}
+
+.sewise-textLayer ::selection { background: rgb(0,0,255); }
+.sewise-textLayer ::-moz-selection { background: rgb(0,0,255); }
+
+.sewise-textLayer .endOfContent {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  cursor: default;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+
+.sewise-textLayer .endOfContent.active {
+  top: 0px;
+}
+
