@@ -8,7 +8,6 @@
 		<style>
 			.container{
 				width: 800px;
-				/*height: 100px;*/
 			}
 			.listBox{
 				margin-top:100px;
@@ -88,6 +87,9 @@
 						case "ads-plugin":
 						 window.location.href="./demo/adsMobileDemo.html";
 						break;
+						case "sync-ppt":
+						 window.location.href="./demo/lectureplayerDemo.html";
+						break;
 					}
 				});
 			}
@@ -99,7 +101,7 @@
 				<div class="row">
 					<div class="col-md-4"><button name="live-flash-m3u8" type="button" class="btn btn-warning">直播演示1</button></div>
 					<div class="col-md-4"><button name="live-flash-rtmp" type="button" class="btn btn-warning">直播演示2</button></div>
-					<div class="col-md-4"><button name="vod-h5-audio" type="button" class="btn btn-primary">播放音乐</button></div>
+					<div class="col-md-4"><button name="vod-h5-audio" type="button" class="btn btn-warning">播放音乐</button></div>
 				</div>
 				<div class="row">
 					<div class="col-md-4"><button name="vod-h5-mp4" type="button" class="btn btn-info">点播演示1</button></div>
@@ -108,14 +110,14 @@
 				</div>
 				<div class="row">
 					<div class="col-md-4"><button name="vod-flash-m3u8" type="button" class="btn btn-primary">flash模式播放m3u8视频</button></div>
-					<div class="col-md-4"><button name="vod-h5-m3u8" type="button" class="btn btn-success">html5模式播放m3u8</button></div>
-					<div class="col-md-4"><button name="vod-h5-multirate" type="button" class="btn btn-gre">多码率切换演示</button></div>
+					<div class="col-md-4"><button name="vod-h5-m3u8" type="button" class="btn btn-primary">html5模式播放m3u8</button></div>
+					<div class="col-md-4"><button name="vod-h5-multirate" type="button" class="btn btn-primary">多码率切换演示</button></div>
 					
 				</div>
 				<div class="row">
 					<div class="col-md-4"><button name="vod-flash-vr" type="button" class="btn btn-success">flash模式全景点播</button></div>
 					<div class="col-md-4"><button name="live-flash-vr" type="button" class="btn btn-success">flash模式全景直播</button></div>
-					<div class="col-md-4"><button name="live-h5-vr" type="button" class="btn btn-warning">html5模式全景直播</button></div>
+					<div class="col-md-4"><button name="live-h5-vr" type="button" class="btn btn-success">html5模式全景直播</button></div>
 				</div>
 				
 				<div class="row">
@@ -131,7 +133,8 @@
 				</div>
 				<div class="row">
 					<div class="col-md-4"><button name="" type="button" class="btn btn-default">flash广告</button></div>
-					<div class="col-md-4"><button name="ads-plugin" type="button" class="btn btn-gre">html5广告</button></div>	
+					<div class="col-md-4"><button name="ads-plugin" type="button" class="btn btn-gre">html5广告</button></div>
+					<div class="col-md-4"><button name="sync-ppt" type="button" class="btn btn-gre">ppt同步播放器</button></div>
 				</div>
 			</div>
 		</div>
