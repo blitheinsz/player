@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="../dist/js/jquery.min.js"></script>
+		<script src="../dist/sewise.player.min.js"></script>
+		<script src="../dist/plugin/sewise.player.subtitle.min.js"></script>
+		<style>
+			.highlight{
+				color: #994564;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="con1" style="width:640px;height:352px;background-color: aqua;"></div>
+		<script>
+		    var config={
+		    	elid:"con1",
+		    	autostart:true,
+                url:"../assets/video/test.mp4",
+		    	skin:"vodMobileTransparent"
+		    };
+		   
+		    var player;
+		    function dowReady(){
+		       var vttUrl="../assets/vtt/test.vtt";
+		       player=new Sewise.SewisePlayer(config);
+		       var subtitle=new SewiseSubtitle(vttUrl,false);
+		       player.plugins={"subtitle":subtitle};
+			   player.startup();
+			}
+			dowReady();
+		</script>
+	</body>
+</html>

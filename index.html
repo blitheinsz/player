@@ -19,6 +19,10 @@
 			.row{
 				margin-bottom: 20px;
 			}
+			.btn-gre{
+				background-color: #0d5139;
+				color: #FFFFFF;
+			}
 		</style>
 		<script>
 			$(document).ready(function(){
@@ -75,6 +79,15 @@
 						case "vod-h5-multirate":
 						 window.location.href="./demo/multirateTest.html";
 						break;
+						case "vod-subtitle":
+						 window.location.href="./demo/subtitleDemo.html";
+						break;
+						case "vod-hitpoint":
+						 window.location.href="./demo/hitpointDemo.html";
+						break;
+						case "ads-plugin":
+						 window.location.href="./demo/adsMobileDemo.html";
+						break;
 					}
 				});
 			}
@@ -83,36 +96,43 @@
 	<body>
 		<div class="container">
 			<div class="listBox">
-			<div class="row">
-				<div class="col-md-4"><button name="vod-flash-m3u8" type="button" class="btn btn-primary">flash模式点播m3u8视频</button></div>
-				<div class="col-md-4"><button name="vod-h5-audio" type="button" class="btn btn-primary">播放音乐</button></div>
-				<div class="col-md-4"><button name="vod-h5-danmu" type="button" class="btn btn-primary">弹幕插件演示</button></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"><button name="vod-flash-vr" type="button" class="btn btn-success">flash模式全景点播</button></div>
-				<div class="col-md-4"><button name="live-flash-vr" type="button" class="btn btn-success">flash模式全景直播</button></div>
-				<div class="col-md-4"><button name="vod-h5-m3u8" type="button" class="btn btn-success">html5模式播放m3u8</button></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"><button name="live-flash-m3u8" type="button" class="btn btn-warning">直播演示1</button></div>
-				<div class="col-md-4"><button name="live-flash-rtmp" type="button" class="btn btn-warning">直播演示2</button></div>
-				<div class="col-md-4"><button name="live-h5-vr" type="button" class="btn btn-warning">html5模式全景直播</button></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"><button name="vod-h5-mp4" type="button" class="btn btn-info">点播演示1</button></div>
-				<div class="col-md-4"><button name="vod2-h5-mp4" type="button" class="btn btn-info">点播演示2</button></div>
-				<div class="col-md-4"><button name="vod-h5-skin" type="button" class="btn btn-info">酷炫的点播皮肤</button></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"><button name="vod-h5-vr" type="button" class="btn btn-danger">html5模式全景点播</button></div>
-				<div class="col-md-4"><button name="s-shot1" type="button" class="btn btn-danger">非m3u8截图</button></div>
-				<div class="col-md-4"><button name="s-shot2" type="button" class="btn btn-danger">m3u8截图</button></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"><button name="vod-h5-multirate" type="button" class="btn btn-danger">多码率切换演示</button></div>
-				<div class="col-md-4"><button name="" type="button" class="btn btn-default">flash广告</button></div>
-				<div class="col-md-4"><button name="" type="button" class="btn btn-default">html5广告</button></div>
-			</div>
+				<div class="row">
+					<div class="col-md-4"><button name="live-flash-m3u8" type="button" class="btn btn-warning">直播演示1</button></div>
+					<div class="col-md-4"><button name="live-flash-rtmp" type="button" class="btn btn-warning">直播演示2</button></div>
+					<div class="col-md-4"><button name="vod-h5-audio" type="button" class="btn btn-primary">播放音乐</button></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><button name="vod-h5-mp4" type="button" class="btn btn-info">点播演示1</button></div>
+					<div class="col-md-4"><button name="vod2-h5-mp4" type="button" class="btn btn-info">点播演示2</button></div>
+					<div class="col-md-4"><button name="vod-h5-skin" type="button" class="btn btn-info">酷炫的点播皮肤</button></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><button name="vod-flash-m3u8" type="button" class="btn btn-primary">flash模式播放m3u8视频</button></div>
+					<div class="col-md-4"><button name="vod-h5-m3u8" type="button" class="btn btn-success">html5模式播放m3u8</button></div>
+					<div class="col-md-4"><button name="vod-h5-multirate" type="button" class="btn btn-gre">多码率切换演示</button></div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-4"><button name="vod-flash-vr" type="button" class="btn btn-success">flash模式全景点播</button></div>
+					<div class="col-md-4"><button name="live-flash-vr" type="button" class="btn btn-success">flash模式全景直播</button></div>
+					<div class="col-md-4"><button name="live-h5-vr" type="button" class="btn btn-warning">html5模式全景直播</button></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4"><button name="vod-h5-vr" type="button" class="btn btn-danger">html5模式全景点播</button></div>
+					<div class="col-md-4"><button name="s-shot1" type="button" class="btn btn-danger">非m3u8截图</button></div>
+					<div class="col-md-4"><button name="s-shot2" type="button" class="btn btn-danger">m3u8截图</button></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><button name="vod-h5-danmu" type="button" class="btn btn-primary">弹幕插件演示</button></div>
+					<div class="col-md-4"><button name="vod-subtitle" type="button" class="btn btn-primary">字幕插件</button></div>
+					<div class="col-md-4"><button name="vod-hitpoint" type="button" class="btn btn-primary">图片打点插件</button></div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-4"><button name="" type="button" class="btn btn-default">flash广告</button></div>
+					<div class="col-md-4"><button name="ads-plugin" type="button" class="btn btn-gre">html5广告</button></div>	
+				</div>
 			</div>
 		</div>
 	</body>

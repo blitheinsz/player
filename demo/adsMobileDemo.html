@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../dist/js/jquery.min.js"></script>
+		<script src="../dist/sewise.player.min.js"></script>
+		<script src="../dist/plugin/sewise.player.ads.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready(dowReady);
+		
+            var json_str='{ "start":[{"id":"9999","duration":"16","src":"../assets/video/ff.mp4","link":"http://www.163.com" }],' ;
+			var pause_str='"pause":[{"id":"8888888","duration":"3","src":"../assets/image/1.jpg","link":"http://www.163.com"},{"duration":"3","src":"../assets/image/2.jpg",	"link":"http://www.163.com"}],';
+			var corner_str='"corner":[{"id":"8888888","showTime":"10","duration":"10","src":"../assets/gif/cc.gif","link":"http://www.163.com"},{"showTime":"25","duration":"8","src":"../assets/gif/gun.gif",	"link":"http://www.163.com"}],';
+			
+			var end_str='"end":[{"duration":"20","src":"../assets/video/ff.mp4","link":"http://www.163.com"}]}';
+						
+			
+			json_str=json_str+pause_str+corner_str+ end_str;
+		   //json_str=null;
+		   var adsCallFunObj={adsPlayCallBack:"adsHandle"};
+		   
+		    var config={
+		    	elid:"con1",
+		    	autostart:true,
+		    	server:"vod",
+		    	type:"mp4",
+		    	url:"../assets/video/test.mp4",
+		    	bigplaybtndisplay:"disable",
+		    	canHideSkin:false,
+		    	noticeOpenAdsLink:false,
+		    	skin:"vodLight"
+		    };
+		    
+		    var player;
+		    var adsplugin;
+		    function dowReady(){
+		       if(json_str){
+		       	  config.adsjsonstr=json_str;
+		       	  config.adscallback=adsCallFunObj;
+		       	  player=new Sewise.SewisePlayer(config);
+		          adsplugin=new SewiseAds();
+		          player.plugins={"adsplugin":adsplugin};
+		       }else{
+		       	 player=new Sewise.SewisePlayer(config);
+		       }
+		       player.on("otherMediaEvent",otherMediaHandle);
+			   player.startup(); 
+		    }
+		    function otherMediaHandle(obj){
+		    	console.log(obj);
+		    }
+		    function adsHandle(obj){
+		    	for(var ke in obj.data){
+		    		console.log(obj.pos+":  "+ke+"----"+obj.data[ke]);
+		    	}
+		    }
+		</script>
+		<div id="con1" style="width:640px;height:400px;background-color: aqua;"></div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>播放器视频打点插件</title>
+		<script src="../dist/js/jquery.min.js"></script>
+		<script src="../dist/sewise.player.min.js"></script>
+		<link rel="stylesheet" href="../assets/css/hitpoint.css" />
+		<script src="../dist/plugin/sewise.player.hitpoint.min.js"></script>
+		<script>
+		    var config={
+		    	elid:"con1",
+		    	autostart:true,
+                url:"../assets/video/test.mp4",
+		    	skin:"vodWhite"
+		    };
+		   
+		     $(document).ready(dowReady);
+		    
+		    var player;//播放器
+		    var hitpoint;//视频打点插件
+		    function dowReady(){
+		       player=new Sewise.SewisePlayer(config);
+		       hitpoint=new SewiseHitPoint();
+		       player.plugins={"hitpoint":hitpoint};	
+			   player.startup();
+		    }
+		</script>
+	</head>
+	<body>
+		<div id="con1" style="width:640px;height:352px;background-color: aqua;"></div>
+		<br>
+		<p style="color: #FF0000;font-size: 14px;">请将鼠标移动到进度条上</p>
+	</body>
+</html>
